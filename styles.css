@@ -1,0 +1,140 @@
+/*Universal Selector*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*CSS Custom Properties*/
+
+:root {
+  /* Colours */
+  --color-background: hsl(233, 47%, 7%);
+  --color-card-background: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-white-stats: hsla(0, 0%, 100%, 0.6);
+
+  /* Font Sizes */
+  --font-size-title-desktop: 2.25rem;
+  --font-size-title-mobile: 1.75rem;
+  --font-size-text: 0.938rem;
+  --font-size-stats: 1.5rem;
+  --font-size-stats-captions: 0.75rem;
+}
+
+/* Allignment Styling */
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+.container {
+  max-width: 327px;
+  width: 95vw;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.image--mobile {
+  display: block;
+  width: 100vw;
+  max-width: 327px;
+  height: auto;
+  opacity: 0.4;
+}
+
+.image--overlay {
+  background: var(--color-accent);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem; /* Footer height */
+}
+
+.text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Color */
+
+body {
+  background-color: var(--color-background);
+}
+
+.container {
+  background-color: var(--color-card-background);
+}
+
+.text__title--white,
+.text__stats,
+.attribution {
+  color: var(--color-white);
+}
+
+.text__title--accent {
+  color: var(--color-accent);
+}
+
+.text__paragraph {
+  color: var(--color-white-paragraph);
+}
+
+.text__stats-captions {
+  color: var(--color-white-stats);
+}
+
+/* Typography */
+
+.text {
+  font-family: Inter;
+  text-align: center;
+}
+
+.text__title {
+  font-weight: bold;
+  font-size: var(--font-size-title-mobile);
+}
+
+.text__paragraph {
+  font-size: var(--font-size-text);
+  line-height: 1.563rem;
+  text-align: center;
+}
+
+.text__stats {
+  font-size: var(--font-size-stats);
+  font-weight: bold;
+}
+
+.text__stats-captions {
+  font-size: var(--font-size-stats-captions);
+  text-transform: uppercase;
+  letter-spacing: 0.063rem;
+  opacity: 0.6;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
